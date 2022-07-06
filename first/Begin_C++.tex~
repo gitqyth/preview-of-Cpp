@@ -1,0 +1,43 @@
+\documentclass[10pt,a4paper,fleqn]{ctexart}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{cite}
+\usepackage{xltxtra}
+\usepackage{float}
+
+\title{开始学习C++}
+\author{唐浩 \\ 信息与计算科学 3200102118}
+
+\maketitle
+
+\begin{document}
+
+%\maketitle
+
+\section{进入C++}
+
+展示一个简要的C++程序如下：
+\begin{verbatim}
+// myfirst.cpp -- displays a message
+
+#include<iostream>   //a preprocessor directive
+using namespace std;  //make definitions visible
+
+int main(int argc, char *argv[])  //function header
+{
+    cout << "Come up and C++ me some time." << endl;  //message
+    cout << "You won't reqret it!" << endl;
+    return 0;  //terminate main()
+}
+\end{verbatim}
+
+本人使用的是 linux 系统 (ubuntu 20.04)， 采用的是 g++ 编译器，故输入命令: `g++ -o test myfirst.cpp', 编译器运行之后将生成一个可执行文件 `test', 继续在终端 (emacs shell) 输入 `./test', 即可得到输出数据 :
+
+Come up and C++ me some time.
+
+You won't reqret it!
+
+\subsection{main()函数}
+\end{document}
